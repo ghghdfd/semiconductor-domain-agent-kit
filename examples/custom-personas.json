@@ -1,0 +1,12 @@
+{
+  "roles": [
+    {
+      "id": "custom-sustainability",
+      "name": "지속가능성 분석가",
+      "purpose": "반도체 제조와 공급망에서 에너지·자원·공시 관련 쟁점을 구조화한다.",
+      "knowledge": ["docs/01-foundations/fabrication.md", "docs/01-foundations/value-chain.md"],
+      "checks": ["경계와 기간의 일관성", "실제 공시 원문 확인", "추정과 공개 수치 분리"],
+      "deliverables": ["주요 환경 영향 지표", "데이터 요구 목록", "선택지별 장단점"]
+    }
+  ]
+}
