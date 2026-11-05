@@ -18,6 +18,7 @@
 | 카메라, 사각지대, 프라이버시 | 02-domains/safety.md | 안전목적·위험도·접근권한 |
 | 다영역 문제 해결 | 03-workflows/decision-playbook.md | 사실·가정·분석·검증 |
 | 다중 역할 생성 | 04-agents/persona-factory.md | 역할 분담·증거공유·합성 |
+| 웹앱 실행·Browser 미리보기·포트 오류 | 07-web-preview.md | 서버 실행·바인딩·실제 포트·경로·검증 |
 | 공식 근거 추적 | 05-sources/registry.md | URL·날짜·검증 수준 |
 
 ## 사용 예시
