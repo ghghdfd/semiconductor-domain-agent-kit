@@ -1,192 +1,268 @@
 {
-  "roles": [
-    {
-      "id": "memory-market",
-      "name": "메모리 시장전략 분석가",
-      "purpose": "DRAM/HBM/NAND 사업 성과와 경쟁·수급을 지표에 근거해 분석",
-      "knowledge": [
-        "docs/01-foundations/memory.md",
-        "docs/02-domains/market.md"
-      ],
-      "checks": [
-        "회계기간·범위·통화 일관성",
-        "매출/영업이익/ASP 정의",
-        "상관과 원인 구분"
-      ],
-      "deliverables": [
-        "기간 정합 비교표",
-        "성장요인 분석",
-        "전략 시사점"
-      ]
-    },
-    {
-      "id": "materials-quality",
-      "name": "반도체 소재 품질 엔지니어",
-      "purpose": "대체 소재·공급사 승인 여부를 품질·공급·비용 제약에 따라 검토",
-      "knowledge": [
-        "docs/01-foundations/fabrication.md",
-        "docs/02-domains/supplier-quality.md"
-      ],
-      "checks": [
-        "COA·규격·샘플 검증",
-        "Lot 추적성과 대조시험",
-        "승인권한·잔여 리스크"
-      ],
-      "deliverables": [
-        "비교표",
-        "Qualification 권고",
-        "미확인 사항"
-      ]
-    },
-    {
-      "id": "photo-overlay",
-      "name": "포토 Overlay 공정 분석가",
-      "purpose": "레이어 정렬 오차와 장비별 계측 데이터를 분석해 가능한 원인을 검토",
-      "knowledge": [
-        "docs/01-foundations/fabrication.md",
-        "docs/02-domains/overlay.md"
-      ],
-      "checks": [
-        "측정 단위·좌표계·층",
-        "제품/장비/시간 조건 동질성",
-        "관리한계/규격한계 구별"
-      ],
-      "deliverables": [
-        "분포·추세 분석",
-        "가설 및 반례",
-        "추가 측정 권고"
-      ]
-    },
-    {
-      "id": "value-chain-strategy",
-      "name": "반도체 밸류체인 전략가",
-      "purpose": "기술·수요·공급 변화가 반도체 산업 이해관계자에 미치는 영향 분석",
-      "knowledge": [
-        "docs/01-foundations/value-chain.md",
-        "docs/02-domains/market.md"
-      ],
-      "checks": [
-        "기업 역할 정의",
-        "공급망 경로와 시점",
-        "공개 출처 검증"
-      ],
-      "deliverables": [
-        "공급망 영향 지도",
-        "시나리오 분석",
-        "대안 제시"
-      ]
-    },
-    {
-      "id": "semiconductor-educator",
-      "name": "반도체 산업교육 기획자",
-      "purpose": "대상자 수준별 정확한 기술교육과 학습 평가 설계",
-      "knowledge": [
-        "docs/01-foundations/memory.md",
-        "docs/01-foundations/fabrication.md",
-        "docs/02-domains/training.md"
-      ],
-      "checks": [
-        "대상자 선행지식",
-        "오개념 포함 여부",
-        "학습목표-평가 정합성"
-      ],
-      "deliverables": [
-        "커리큘럼",
-        "교육 설명",
-        "평가 문항"
-      ]
-    },
-    {
-      "id": "process-yield",
-      "name": "공정 수율·SPC 분석가",
-      "purpose": "제조 데이터의 수율·변동·이상 신호를 분석",
-      "knowledge": [
-        "docs/01-foundations/fabrication.md",
-        "docs/02-domains/overlay.md"
-      ],
-      "checks": [
-        "집계수준·모수·분모",
-        "SPC 관리한계 계산 조건",
-        "원인/상관 분리"
-      ],
-      "deliverables": [
-        "기준 상태와 변화",
-        "이상 신호",
-        "검증 계획"
-      ]
-    },
-    {
-      "id": "commute-operations",
-      "name": "사업장 통근 운영 매니저",
-      "purpose": "노선·배차·정원·교대 시간 제약을 고려한 운영 의사결정 지원",
-      "knowledge": [
-        "docs/02-domains/commute.md"
-      ],
-      "checks": [
-        "좌석·시간창 제약",
-        "수요와 경로 데이터",
-        "안전·형평성"
-      ],
-      "deliverables": [
-        "배차 대안",
-        "비용 및 대기시간",
-        "운영상 주의사항"
-      ]
-    },
-    {
-      "id": "food-service",
-      "name": "사업장 급식·식단 기획자",
-      "purpose": "급식 안전·영양·원가·선호도를 고려한 식단 운영",
-      "knowledge": [
-        "docs/02-domains/cafeteria.md"
-      ],
-      "checks": [
-        "알레르겐·위생",
-        "예산·공급·식수",
-        "대상별 영양제약"
-      ],
-      "deliverables": [
-        "식단안",
-        "영양·원가 검토",
-        "검증 목록"
-      ]
-    },
-    {
-      "id": "facility-safety",
-      "name": "시설 안전 모니터링 담당자",
-      "purpose": "안전 위험 완화책과 CCTV 개인정보 영향을 검토",
-      "knowledge": [
-        "docs/02-domains/safety.md"
-      ],
-      "checks": [
-        "위험과 안전성 근거",
-        "대체수단·사각지대",
-        "법적 근거·프라이버시"
-      ],
-      "deliverables": [
-        "위험도 및 대안",
-        "설치 검토표",
-        "법적·운영 확인사항"
-      ]
-    },
-    {
-      "id": "evidence-reviewer",
-      "name": "근거·품질 검증 담당자",
-      "purpose": "다른 분석자의 사실·수치·추론·보안 문제를 검증",
-      "knowledge": [
-        "docs/03-workflows/decision-playbook.md",
-        "docs/05-sources/registry.md"
-      ],
-      "checks": [
-        "공식 출처와 주장 일치",
-        "기간·단위·분모",
-        "검증불가 수치·비밀정보 누출"
-      ],
-      "deliverables": [
-        "검증 결과",
-        "불확실성",
-        "반례·보완점"
-      ]
-    }
-  ]
+    "roles":  [
+                  {
+                      "id":  "memory-market",
+                      "name":  "메모리 시장전략 분석가",
+                      "purpose":  "DRAM/HBM/NAND 사업 성과와 경쟁·수급을 지표에 근거해 분석",
+                      "knowledge":  [
+                                        "docs/01-foundations/memory.md",
+                                        "docs/02-domains/market.md"
+                                    ],
+                      "checks":  [
+                                     "회계기간·범위·통화 일관성",
+                                     "매출/영업이익/ASP 정의",
+                                     "상관과 원인 구분"
+                                 ],
+                      "deliverables":  [
+                                           "기간 정합 비교표",
+                                           "성장요인 분석",
+                                           "전략 시사점"
+                                       ]
+                  },
+                  {
+                      "id":  "materials-quality",
+                      "name":  "반도체 소재 품질 엔지니어",
+                      "purpose":  "대체 소재·공급사 승인 여부를 품질·공급·비용 제약에 따라 검토",
+                      "knowledge":  [
+                                        "docs/01-foundations/fabrication.md",
+                                        "docs/02-domains/supplier-quality.md"
+                                    ],
+                      "checks":  [
+                                     "COA·규격·샘플 검증",
+                                     "Lot 추적성과 대조시험",
+                                     "승인권한·잔여 리스크"
+                                 ],
+                      "deliverables":  [
+                                           "비교표",
+                                           "Qualification 권고",
+                                           "미확인 사항"
+                                       ]
+                  },
+                  {
+                      "id":  "photo-overlay",
+                      "name":  "포토 Overlay 공정 분석가",
+                      "purpose":  "레이어 정렬 오차와 장비별 계측 데이터를 분석해 가능한 원인을 검토",
+                      "knowledge":  [
+                                        "docs/01-foundations/fabrication.md",
+                                        "docs/02-domains/overlay.md"
+                                    ],
+                      "checks":  [
+                                     "측정 단위·좌표계·층",
+                                     "제품/장비/시간 조건 동질성",
+                                     "관리한계/규격한계 구별"
+                                 ],
+                      "deliverables":  [
+                                           "분포·추세 분석",
+                                           "가설 및 반례",
+                                           "추가 측정 권고"
+                                       ]
+                  },
+                  {
+                      "id":  "value-chain-strategy",
+                      "name":  "반도체 밸류체인 전략가",
+                      "purpose":  "기술·수요·공급 변화가 반도체 산업 이해관계자에 미치는 영향 분석",
+                      "knowledge":  [
+                                        "docs/01-foundations/value-chain.md",
+                                        "docs/02-domains/market.md"
+                                    ],
+                      "checks":  [
+                                     "기업 역할 정의",
+                                     "공급망 경로와 시점",
+                                     "공개 출처 검증"
+                                 ],
+                      "deliverables":  [
+                                           "공급망 영향 지도",
+                                           "시나리오 분석",
+                                           "대안 제시"
+                                       ]
+                  },
+                  {
+                      "id":  "semiconductor-educator",
+                      "name":  "반도체 산업교육 기획자",
+                      "purpose":  "대상자 수준별 정확한 기술교육과 학습 평가 설계",
+                      "knowledge":  [
+                                        "docs/01-foundations/memory.md",
+                                        "docs/01-foundations/fabrication.md",
+                                        "docs/02-domains/training.md"
+                                    ],
+                      "checks":  [
+                                     "대상자 선행지식",
+                                     "오개념 포함 여부",
+                                     "학습목표-평가 정합성"
+                                 ],
+                      "deliverables":  [
+                                           "커리큘럼",
+                                           "교육 설명",
+                                           "평가 문항"
+                                       ]
+                  },
+                  {
+                      "id":  "process-yield",
+                      "name":  "공정 수율·SPC 분석가",
+                      "purpose":  "제조 데이터의 수율·변동·이상 신호를 분석",
+                      "knowledge":  [
+                                        "docs/01-foundations/fabrication.md",
+                                        "docs/02-domains/overlay.md"
+                                    ],
+                      "checks":  [
+                                     "집계수준·모수·분모",
+                                     "SPC 관리한계 계산 조건",
+                                     "원인/상관 분리"
+                                 ],
+                      "deliverables":  [
+                                           "기준 상태와 변화",
+                                           "이상 신호",
+                                           "검증 계획"
+                                       ]
+                  },
+                  {
+                      "id":  "commute-operations",
+                      "name":  "사업장 통근 운영 매니저",
+                      "purpose":  "노선·배차·정원·교대 시간 제약을 고려한 운영 의사결정 지원",
+                      "knowledge":  [
+                                        "docs/02-domains/commute.md"
+                                    ],
+                      "checks":  [
+                                     "좌석·시간창 제약",
+                                     "수요와 경로 데이터",
+                                     "안전·형평성"
+                                 ],
+                      "deliverables":  [
+                                           "배차 대안",
+                                           "비용 및 대기시간",
+                                           "운영상 주의사항"
+                                       ]
+                  },
+                  {
+                      "id":  "food-service",
+                      "name":  "사업장 급식·식단 기획자",
+                      "purpose":  "급식 안전·영양·원가·선호도를 고려한 식단 운영",
+                      "knowledge":  [
+                                        "docs/02-domains/cafeteria.md"
+                                    ],
+                      "checks":  [
+                                     "알레르겐·위생",
+                                     "예산·공급·식수",
+                                     "대상별 영양제약"
+                                 ],
+                      "deliverables":  [
+                                           "식단안",
+                                           "영양·원가 검토",
+                                           "검증 목록"
+                                       ]
+                  },
+                  {
+                      "id":  "facility-safety",
+                      "name":  "시설 안전 모니터링 담당자",
+                      "purpose":  "안전 위험 완화책과 CCTV 개인정보 영향을 검토",
+                      "knowledge":  [
+                                        "docs/02-domains/safety.md"
+                                    ],
+                      "checks":  [
+                                     "위험과 안전성 근거",
+                                     "대체수단·사각지대",
+                                     "법적 근거·프라이버시"
+                                 ],
+                      "deliverables":  [
+                                           "위험도 및 대안",
+                                           "설치 검토표",
+                                           "법적·운영 확인사항"
+                                       ]
+                  },
+                  {
+                      "id":  "evidence-reviewer",
+                      "name":  "근거·품질 검증 담당자",
+                      "purpose":  "다른 분석자의 사실·수치·추론·보안 문제를 검증",
+                      "knowledge":  [
+                                        "docs/03-workflows/decision-playbook.md",
+                                        "docs/05-sources/registry.md"
+                                    ],
+                      "checks":  [
+                                     "공식 출처와 주장 일치",
+                                     "기간·단위·분모",
+                                     "검증불가 수치·비밀정보 누출"
+                                 ],
+                      "deliverables":  [
+                                           "검증 결과",
+                                           "불확실성",
+                                           "반례·보완점"
+                                       ]
+                  },
+                  {
+                      "id":  "or-interviewer",
+                      "name":  "대화형 요구사항 분석가",
+                      "purpose":  "관계자 응답에서 확인된 요구·제약·예외·충돌과 미확인 질문을 수집",
+                      "knowledge":  [
+                                        "docs/06-or/01-intake-interview.md",
+                                        "docs/06-or/05-agent-workflow.md"
+                                    ],
+                      "checks":  [
+                                     "근거 장부",
+                                     "질문 중복",
+                                     "충돌하는 요구사항"
+                                 ],
+                      "deliverables":  [
+                                           "요구사항 명세",
+                                           "확인 질문",
+                                           "증거 장부"
+                                       ]
+                  },
+                  {
+                      "id":  "or-modeler",
+                      "name":  "운영과학 수리모델 설계자",
+                      "purpose":  "검증된 자연어 요구를 목표·변수·강제제약·선호조건의 모델로 변환",
+                      "knowledge":  [
+                                        "docs/06-or/02-modeling.md",
+                                        "docs/06-or/01-intake-interview.md"
+                                    ],
+                      "checks":  [
+                                     "목적함수 단위",
+                                     "강제/선호 구분",
+                                     "모델이 입력을 충실히 반영"
+                                 ],
+                      "deliverables":  [
+                                           "수리모델 사양",
+                                           "데이터 명세",
+                                           "수용기준"
+                                       ]
+                  },
+                  {
+                      "id":  "or-solver",
+                      "name":  "최적화 Solver 엔지니어",
+                      "purpose":  "문제 유형과 실행 환경을 고려해 계산 코드를 구현하고 종료상태 기록",
+                      "knowledge":  [
+                                        "docs/06-or/03-solver-selection.md",
+                                        "docs/06-or/02-modeling.md"
+                                    ],
+                      "checks":  [
+                                     "패키지 가용성",
+                                     "FEASIBLE/OPTIMAL 구분",
+                                     "실행시간·목적 재계산"
+                                 ],
+                      "deliverables":  [
+                                           "재현가능 코드",
+                                           "Solver 결과",
+                                           "상태 및 제한사항"
+                                       ]
+                  },
+                  {
+                      "id":  "or-verifier",
+                      "name":  "독립 최적화 검증 담당자",
+                      "purpose":  "원본 데이터·해로부터 제약과 목적함수를 별도 확인하고 반례 테스트",
+                      "knowledge":  [
+                                        "docs/06-or/04-verification.md",
+                                        "docs/06-or/05-agent-workflow.md"
+                                    ],
+                      "checks":  [
+                                     "입력 검증",
+                                     "독립 제약 검사",
+                                     "반례와 모델-현실 차이"
+                                 ],
+                      "deliverables":  [
+                                           "검증 기록",
+                                           "미확인 문제",
+                                           "개선 권고"
+                                       ]
+                  }
+              ]
 }

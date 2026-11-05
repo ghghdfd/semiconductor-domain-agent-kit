@@ -31,3 +31,14 @@
 ## 원칙
 
 요청자가 제공한 데이터·규칙을 우선 읽되, 검증되지 않은 '조직 내부의 사실'로 일반화하지 않는다. 지역·사업장·장비별 임계값은 본 저장소에 없다. 실제 값이 없다면 필요한 데이터를 먼저 제시한다.
+
+## 운영과학(OR)·대화형 문제해결 확장 (2026-11-05)
+- 관계자 인터뷰·요구사항 수집: [06-or/01-intake-interview.md](06-or/01-intake-interview.md)
+- 수리모델 정형화: [06-or/02-modeling.md](06-or/02-modeling.md)
+- Solver 선택: [06-or/03-solver-selection.md](06-or/03-solver-selection.md)
+- 독립 검증: [06-or/04-verification.md](06-or/04-verification.md)
+- 에이전트 협업: [06-or/05-agent-workflow.md](06-or/05-agent-workflow.md)
+- 합성 예제: [06-or/06-synthetic-cases.md](06-or/06-synthetic-cases.md)
+- 2026 대회 공개 근거: [06-or/07-competition-evidence.md](06-or/07-competition-evidence.md)
+
+**라우팅 기준:** 업무 요구가 모호하면 인터뷰 문서부터, 자원·일정·경로 선택이면 모델링/솔버 문서부터, 단순 정보 검색이면 OR을 억지로 적용하지 않는다.

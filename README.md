@@ -60,3 +60,15 @@ codex
 - 근거가 부족한 수치는 만들지 않습니다. 2026-11-05 이후의 최신 실적·규정은 새로 확인하세요.
 - 외부 문서의 원문·표·도면을 복제하지 않고, 짧은 자체 설명과 출처 링크만 담았습니다.
 - 코드·문서의 원본 작성 부분은 LICENSE의 MIT 조건을 적용합니다. 링크된 제3자 문서의 권리는 원저작자에게 있습니다.
+
+## 새 기능: 업무 최적화 및 대화형 AI 에이전트 (2026-11-05)
+반도체 섹션은 유지하면서 [OR 확장 문서](docs/06-or/00-overview.md)를 추가했습니다. 업무가 최적화 문제인지 먼저 확인하고, 관계자 인터뷰 → 요구 명세 → 결정변수·목적함수·제약조건 → Solver → 독립 검증 순서로 해결합니다.
+
+```bash
+python scripts/check_or_contract.py examples/or/model-contract.json
+python scripts/solve_assignment.py examples/or/assignment.json
+python scripts/compose_personas.py --roles or-interviewer,or-modeler,or-solver,or-verifier --out generated_agents
+python -m unittest discover -s tests -v
+```
+
+**표준 라이브러리 예제는 소형 합성 배정(완전탐색) 전용**입니다. 대규모 실무에서는 CP-SAT/LP/MILP/VRP 등 환경에 맞는 솔버를 사용하세요. 현재 기본 예제에는 외부 패키지 설치가 필요하지 않습니다. 본 자료에는 실제 평가문항이나 비공개 데이터가 없습니다.

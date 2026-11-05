@@ -40,3 +40,16 @@
 - 출처를 링크하는 것은 원본 자료의 자유로운 재배포 허가와 같지 않다.
 - 원문 PDF·도표·그림·사내 정보·시험 내부 자료를 그대로 저장하거나 공개하지 않는다.
 - 이 문서는 공개 자료의 일반화된 자체 정리이며 공식 SK하이닉스 가이드가 아니다.
+
+## OR·AI 에이전트 추가 검증 출처 (2026-11-05)
+| ID | 출처 | 검증 항목 | URL |
+| --- | --- | --- | --- |
+| OR01 | Google OR-Tools | 최적화 개념·일반 절차 | https://developers.google.com/optimization/introduction |
+| OR02 | Google OR-Tools | CP-SAT 정수 기반 요구·상태 | https://developers.google.com/optimization/cp/cp_solver |
+| OR03 | Google OR-Tools | 교대 근무표·제약 기반 스케줄 | https://developers.google.com/optimization/scheduling/employee_scheduling |
+| OR04 | Google OR-Tools | 복수 차량 경로·용량·시간창 | https://developers.google.com/optimization/routing/vrp |
+| OR05 | SciPy 공식 문서 | 혼합정수선형계획법 및 종료 상태 | https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.milp.html |
+| OR06 | AI TOP 100 공식 | 2026-10-31 예선, 가상 인터뷰·에이전트 제작 | https://aitop100.org/ |
+| OR07 | SK하이닉스 Talent Hub 공식 | 2026 AI 해커톤 개요·활용 역량 | https://talent.skhynix.com/hub/ko/company/story/237 |
+
+공식 대회 안내는 **접근 방식**의 비교에만 이용한다. 비공개 문제의 구조나 OR 출제 사실을 확정하지 않는다.
